@@ -15,7 +15,7 @@ import {queryObjectAction} from '../actions/queryAction'
 
 export const SearchBox = () => {
 	const dispatch: ThunkDispatch<AppStateType, void, Action> = useDispatch()
-	const [bodyRequest, setBody] = useState<object>({page: 1})
+	const [bodyRequest, setBody] = useState<object>({page: 1, limit: 6})
 
 	const optionsCategories = ['Усі', 'Україна', 'Бізнес', 'Техно', 'Новації', 'Life', 'Спорт', 'Світ']
 	const [category, setCatefory] = useState<string | null>('')

@@ -47,6 +47,9 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 170%;
     color: #696969;
   }
+  textarea {
+    color: #333;
+  }
   tspan {
     font-size: .7rem !important;
   }

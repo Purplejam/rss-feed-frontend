@@ -11,21 +11,22 @@ import {queryArticlesAction} from '../actions/articlesAction'
 import {FeedPagination} from './Pagination'
 import {IarticleState} from '../reducers/articlesReducer'
 
+
 export const Home = () => {
 	const dispatch: ThunkDispatch<AppStateType, void, Action> = useDispatch()
 	const {totalArticles}: IarticleState = useSelector((state: AppStateType) => state.articles)
-	const {page, sorting, searchQuery, category}: IqueryState = useSelector((state: AppStateType) => state.query)
+	const {page, sorting, searchQuery, category, limit}: IqueryState = useSelector((state: AppStateType) => state.query)
 
 
 	useEffect(() => {
-		const body = {page, sorting, searchQuery, category}
+		const body = {page, sorting, searchQuery, category, limit}
 		dispatch(queryArticlesAction(body))
-	}, [page, sorting, searchQuery, category])
+	}, [page, sorting, searchQuery, category, limit])
 
 	return(
 		<HomeStyles className="container">
 			<h2>Новини України Та Світу</h2>
-			<h4 className="total-items-count">Знайдено {totalArticles} новин за вашим запитом</h4>	
+			<h4 className="total-items-count">Знайдених новин за вашим запитом – {totalArticles}</h4>	
 			<SearchBox/>
 			<ArticlesFeed/>
 			<FeedPagination/>

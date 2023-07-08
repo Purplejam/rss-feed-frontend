@@ -4,6 +4,7 @@ import { queryArticlesAction } from '../actions/articlesAction'
 
 export interface IqueryState {
 	page: number,
+	limit: number,
 	category: string, 
 	sorting: string,
 	searchQuery: string,
@@ -11,6 +12,7 @@ export interface IqueryState {
 
 const initialState: IqueryState = {
 	page: 1,
+	limit: 6,
 	category: '',
 	sorting: '',
 	searchQuery: ''
@@ -23,7 +25,8 @@ const queryReducer = (state: IqueryState = initialState,
 			page: number,
 			category: string,
 			sorting: string,
-			searchQuery: string		
+			searchQuery: string,
+			limit: number		
 		}}) => {
 	switch(action.type) {
 		case 'RESET_QUERY' : {

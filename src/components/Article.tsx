@@ -8,12 +8,14 @@ export const Article = ({title, link, pubDate, enclosure, content, contentSnippe
 		return date.toLocaleString('en-US')
 	}
 	return(
-		<ArticleStyle>
+		<ArticleStyle key={pubDate}>
 			<h4>{title}</h4>
 			<img src={enclosure.url} alt={categories}/>
-			<p className="article-category"><i>Категорія: {categories}</i></p>
-			<p className="article-content">{contentSnippet}</p>
-			<p className="article-date"><i>Час публікації: {getDateFromIso(isoDate)}</i></p>
+			<div className="article-image-description">
+				<p className="article-category"><i>Категорія: {categories}</i></p>
+				<p className="article-date"><i>{getDateFromIso(isoDate)}</i></p>
+			</div>
+			<p className="article-content">{contentSnippet}</p>		
 			<a href={`${guid}`} target="_blank" rel="noopener noreferrer"><button className="main-button">Читати публікацію</button></a>
 		</ArticleStyle>
 		)
