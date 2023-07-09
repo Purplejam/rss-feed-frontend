@@ -47,6 +47,10 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 170%;
     color: #696969;
   }
+  .loading-gif {
+    font-size: 2rem;
+    opacity: .8;
+  }
   textarea {
     color: #333;
   }

@@ -15,7 +15,7 @@ export const ArticlesFeed = () => {
 	return(
 		<ArticlesFeedStyle>
 		{isLoading 
-		? <h4 className="loading-gif"><LoadingGifSmall color="#333"/></h4> 
+		? <div className="loading-gif"><LoadingGifSmall color="#333"/></div> 
 		:<>
 			<div className="articles-section">
 			{articles.map((article) => {

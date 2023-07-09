@@ -4,6 +4,7 @@ import {faCircleNotch} from '@fortawesome/free-solid-svg-icons'
 
 const LoadingSmallDiv = styled.div`
   text-align: center;
+  padding-top: 2rem;
   display: inline-block;
   width: 100%;
 `
