@@ -1,10 +1,8 @@
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 const red = '#EF4F4F'
 const lightred = '#EE9595'
-const lightblue = '#9DDDDB'
 const darkblue = '#6B7AA1'
-const darkblue01 = '#97A1BC'
 
 export const GlobalStyle = createGlobalStyle`
   *{
@@ -208,5 +206,3 @@ export const GlobalStyle = createGlobalStyle`
    }
  }
 `
-
-

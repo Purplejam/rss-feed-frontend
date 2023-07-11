@@ -3,25 +3,24 @@ export interface IErrorState {
 }
 
 const InitialState = {
-	errorMessage: ''
+	errorMessage: '',
 }
 
-
 const errorReducer = (state: IErrorState = InitialState, action: any) => {
-	switch(action.type) {
-		case 'THROW_ERROR' : {
+	switch (action.type) {
+		case 'THROW_ERROR': {
 			return {
-				errorMessage: action.payload.error
+				errorMessage: action.payload.error,
 			}
 		}
-		case 'CLEAR_ERROR' : {
+		case 'CLEAR_ERROR': {
 			return {
-				...InitialState
+				...InitialState,
 			}
 		}
-		default : {
+		default: {
 			return {
-				...state
+				...state,
 			}
 		}
 	}

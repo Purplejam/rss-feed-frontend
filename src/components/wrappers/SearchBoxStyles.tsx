@@ -8,36 +8,34 @@ export const SearchBoxStyles = styled.div`
 
 	.custom-input {
 		width: 100%;
-		background-color: #FAFAFA;
+		background-color: #fafafa;
 		color: #696969;
 	}
 
-
 	@media (max-width: 768px) {
 		.custom-input {
-			font-size: .8rem;
+			font-size: 0.8rem;
 		}
 
 		fieldset legend span {
 			padding-right: 15px;
 		}
 
-		label[data-shrink=false] {
-			font-size: .8rem;
+		label[data-shrink='false'] {
+			font-size: 0.8rem;
 		}
 	}
 
 	@media (max-width: 415px) {
-
 		padding-bottom: 2rem;
-		padding-top: .7rem;
-		
+		padding-top: 0.7rem;
+
 		.custom-input {
-			font-size: .8rem;
+			font-size: 0.8rem;
 		}
 
-		label[data-shrink=false] {
-			font-size: .8rem;
+		label[data-shrink='false'] {
+			font-size: 0.8rem;
 		}
 	}
 `

@@ -3,6 +3,6 @@ export const validatePassword = (password: string) => {
 }
 
 export const validateEmail = (email: string) => {
-	const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+	const mailformat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 	return mailformat.test(email)
 }

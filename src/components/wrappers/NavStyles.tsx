@@ -6,16 +6,16 @@ export const NavStyle = styled.nav`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	box-shadow: 0 1px 2px 0 rgba(32,33,36,0.28);
+	box-shadow: 0 1px 2px 0 rgba(32, 33, 36, 0.28);
 	background-color: #333;
-	
+
 	ul {
 		li {
 			display: inline-block;
 			padding: 0rem 0.5rem;
 			font-weight: 400;
 			cursor: pointer;
-			font-size: .7rem;
+			font-size: 0.7rem;
 			text-transform: uppercase;
 			a {
 				padding: 1.5rem 0rem;
@@ -23,27 +23,26 @@ export const NavStyle = styled.nav`
 				color: #fff;
 			}
 			&:after {
-				display:block;
-		  content: '';
-		  border-bottom: solid .1rem #FFF;  
-		  transform: scaleX(0);  
-		  transition: transform 180ms ease-in-out;
-		  transform-origin:  0% 50%;
+				display: block;
+				content: '';
+				border-bottom: solid 0.1rem #fff;
+				transform: scaleX(0);
+				transition: transform 180ms ease-in-out;
+				transform-origin: 0% 50%;
 			}
 			&:before {
-				display:block;
-		  content: '';
-		  border-bottom: solid .1rem #FFF;  
-		  transform: scaleX(0);  
-		  transition: transform 180ms ease-in-out;
-		  transform-origin:  0% 50%;
+				display: block;
+				content: '';
+				border-bottom: solid 0.1rem #fff;
+				transform: scaleX(0);
+				transition: transform 180ms ease-in-out;
+				transform-origin: 0% 50%;
 			}
 			&:hover:after {
-				transform: scaleX(1); 
+				transform: scaleX(1);
 			}
 		}
 	}
-
 
 	@media (max-width: 768px) {
 		padding: 0 2rem;
@@ -53,21 +52,20 @@ export const NavStyle = styled.nav`
 		padding: 0 2rem;
 	}
 
-
 	@media (max-width: 430px) {
 		padding: 0 1rem;
 
 		ul li {
-			font-size: .6rem;
+			font-size: 0.6rem;
 		}
-		
+
 		.about-link {
 			display: none;
 		}
 	}
 
 	@media (max-width: 330px) {
-		padding: 0 .5rem;
+		padding: 0 0.5rem;
 	}
 `
 
@@ -76,7 +74,6 @@ export const Logo = styled.h3`
 	cursor: pointer;
 	color: #fff;
 	svg {
-		padding-right: .5rem;
+		padding-right: 0.5rem;
 	}
-	
 `

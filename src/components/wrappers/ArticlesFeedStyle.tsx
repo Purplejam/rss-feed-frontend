@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 
 export const ArticlesFeedStyle = styled.div`
-	
 	h4 {
-		opacity: .6;
+		opacity: 0.6;
 		text-align: center;
 		padding: 1rem 0;
 	}
@@ -20,7 +19,7 @@ export const ArticlesFeedStyle = styled.div`
 		grid-column-gap: 1.5rem;
 		grid-row-gap: 1.5rem;
 		grid-auto-rows: 1fr;
-		
+
 		@media (max-width: 415px) {
 			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 			padding-top: 0;
